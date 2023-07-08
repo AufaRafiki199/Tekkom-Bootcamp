@@ -1,12 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap');
+
+
 *{
     margin: 0;
+    padding: 0;
+    font-family: Manrope;
 }
 
 nav{
-    margin-top: 80px;
-    border: 1px black solid;
+    padding: 26px 0;
+    /* border: 1px black outline; */
+    display: flex;
+    justify-content: center;
+    box-shadow: 1px 1px 1px 0px #E5E9F2;
+
+}
+
+ul{
+    margin-bottom: 0;
+    text-align: center;
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 32px;
 }
 
 li{
     display: inline;
+}
+
+main section.hero{
+    z-index: 99;
+    height: 605px;
+    background-color: rgba(242, 247, 255, 0.70);
+    backdrop-filter: blur(50px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 153px 165px;
+}
+
+main section.hero h1.title{
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px;
+    text-transform: uppercase;
+}
+main div.circle{
+    width: 147px;
+    height: 147px;
+    background-color: #2EC5CE;
+    position: absolute;
+    border-radius: 100%;
+    z-index: -1;
+    top: 211px;
+    left: 295px;
+}
+
+main section.hero h1.title span{
+    font-size: 30px;
+    font-weight: 800;
+    text-transform: capitalize;
+    line-height: 10%;
+}
+
+main section.hero button.btn{
+    width: 308px;
+    margin-top: 32px;
 }
