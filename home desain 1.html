@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tekkom Learning BootCamp</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <div class="background"></div>
+  <style>
+    .background {
+      background-image: url("assets/gambar3.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+
+    #map {
+      height: 400px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="home.php">
+      <img src="#" alt="" width="49">
+      Tekkom Learning BootCamp</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="bi bi-person"></i> Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="bi bi-newspaper"></i> Timeline</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="bi bi-truck"></i> Syarat </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="bi bi-truck"></i> Fasilitas </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="bi bi-truck"></i> Materi </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="bi bi-truck"></i> Lokasi </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Jumbotron -->
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">Tekkom's Learning BootCamp</h1>
+      <p class="lead">Road to Frontend Developer</p>
+    </div>
+  </div>
+
+  <!-- Berita -->
+  <div class="container">
+    <div class="row">
+
+      <!-- Berita 0 -->
+      <div class="col-lg-12 col-md-6 mb-4">
+        <div class="card h-100 border-1">
+          <img class="card-img-top" src="#" alt="">
+          <div class="card-body">
+            <h4 class="card-title">Time Line</h4>
+            <p class="card-text"></p>
+            <div class="row justify-content-center">
+
+              <div class="col-3 mb-4">
+                <div class="card h-100 border-0">
+                  <img class="card-img-top" src="#" alt="">
+                  <div class="card-body">
+                    <h4 class="card-title">Pendaftaran</h4>
+                    <p class="card-text">Turn your idea from concept to MVP</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-3 mb-4">
+                <div class="card h-100 border-0">
+                  <img class="card-img-top" src="#" alt="">
+                  <div class="card-body">
+                    <h4 class="card-title">Registrasi</h4>
+                    <p class="card-text">Sketch out the product to align the user needs</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-3 mb-4">
+                <div class="card h-100 border-0">
+                  <img class="card-img-top" src="#" alt="">
+                  <div class="card-body">
+                    <h4 class="card-title">Pelaksanaan </h4>
+                    <p class="card-text">Convert the designs into a live aplication</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Berita 1 -->
+      <div class="col-lg-12 col-md-6 mb-4">
+        <div class="card h-100 border-1">
+          <img class="card-img-top" src="#" alt="">
+          <div class="card-body">
+            <h4 class="card-title">Persyaratan Umum</h4>
+            <p class="card-text"></p>
+            <div class="row">
+
+              <div class="col-3 mb-4">
+                <div class="card h-100 border-0">
+                  <img class="card-img-top" src="#" alt="">
+                  <div class="card-body">
+                    <h4 class="card-title">1. Modul Pembelajaran</h4>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-3 mb-4">
+                <div class="card h-100 border-0">
+                  <img class="card-img-top" src="#" alt="">
+                  <div class="card-body">
+                    <h4 class="card-title">2. Modul Pembelajaran</h4>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-3 mb-4">
+                <div class="card h-100 border-0">
+                  <img class="card-img-top" src="#" alt="">
+                  <div class="card-body">
+                    <h4 class="card-title">3. Modul Pembelajaran</h4>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-3 mb-4">
+                <div class="card h-100 border-0">
+                  <img class="card-img-top" src="#" alt="">
+                  <div class="card-body">
+                    <h4 class="card-title">4. Modul Pembelajaran</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Berita 2 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-100">
+          <img class="card-img-top" src="#" alt="">
+          <div class="card-body">
+            <h4 class="card-title">Tertarik?,</h4>
+            <p class="card-text">Ayo Tunggu Apa Lagi</p>
+          </div>
+          <div class="card-footer">
+            <a href="#" class="btn btn-primary">Daftar Sekarang</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lokasi -->
+      <div class="container-fluid">
+        <div class="row justify-content-center"> 
+          <div class="col-12 col-md-8">
+            <div class="card">
+              <div class="card-header">Lokasi Bootcamp</div>
+              <div class="card-body">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.0005364774215!2d95.36445227463591!3d5.566934994413587!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304037ba2f883bdb%3A0x96cf41baad212cf!2sLab%20Terpadu%20Universitas%20Syiah%20Kuala!5e0!3m2!1sen!2sid!4v1688657618441!5m2!1sen!2sid" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="100%" height="100%"></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi4jq7Y"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/esm/popper-base"
+    integrity="sha256-wopxtwmpjr2zCgnrdiJysMz6H+yU6BjlU6B0gECgi2k=" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
+<!-- Konten tambahan -->
+<footer>
+  <p></p>
+</footer>
+
+</html>
