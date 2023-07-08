@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     font-family: Manrope;
+    overflow-x: hidden;
 }
 
 nav{
@@ -26,17 +27,18 @@ ul{
 
 li{
     display: inline;
+    font-weight: 700;
 }
 
 main section.hero{
-    z-index: 99;
-    height: 605px;
-    background-color: rgba(242, 247, 255, 0.70);
+    z-index: 2;
+    background-color: rgba(242, 247, 255, 0.30);
     backdrop-filter: blur(50px);
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 153px 165px;
+    padding-bottom: 173px;
 }
 
 main section.hero h1.title{
@@ -44,7 +46,7 @@ main section.hero h1.title{
     text-align: center;
     font-size: 40px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 900;
     line-height: 50px;
     text-transform: uppercase;
 }
@@ -59,14 +61,86 @@ main div.circle{
     left: 295px;
 }
 
+main div.balok-1 img{
+    position: absolute;
+    z-index: 3;
+    top: 591px;
+    left: 830px;
+}
+
+main div.balok-2 img{
+    position: absolute;
+    z-index: 3;
+    top: 654px;
+    left: -99px;
+}
+
 main section.hero h1.title span{
     font-size: 30px;
-    font-weight: 800;
+    font-weight: 600;
     text-transform: capitalize;
     line-height: 10%;
 }
 
-main section.hero button.btn{
-    width: 308px;
+main section.hero div.btn-join{
     margin-top: 32px;
+    padding: 16px 53px;
+    background-color: #8C30F5;
+    border-radius: 8px;
+}
+
+main section.hero div.btn-join a{
+    color: white;
+    margin: 0;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+main section.kol-time{
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 1px black solid; */
+}
+
+main section.kol-time h1.title{
+    text-align: center;
+    font-size: 37px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 50px;
+    margin: 0;
+}
+
+main section.kol-time ul.logo{
+    margin: 40px 0;
+    border: 1px solid;
+    padding: 40px 200px;
+    gap: 64px;
+}
+
+main section.kol-time ul.detail-timeline{
+    margin: 40px 150px;
+}
+
+main section.kol-time ul.detail-timeline li{
+    width: 255px;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    padding: 0;
+}
+
+main section.kol-time ul.detail-timeline li h1{
+    height: 100%;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+}
+
+main section.kol-time ul.detail-timeline li h2{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
 }
