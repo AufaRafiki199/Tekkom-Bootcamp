@@ -220,7 +220,12 @@ main section.fasilitas div.list ul li h2{
 main section.materi{
     display: flex;
     flex-direction: row;
-    padding: 0 150px;
+    padding: 0 140px;
+}
+
+main section.materi div.utama img{
+    width: 430px;
+    height: 335px;
 }
 
 main section.materi ul.list-materi{
@@ -229,16 +234,20 @@ main section.materi ul.list-materi{
 }
 
 main section.materi ul.list-materi li{
-    width: 635px;
-    padding: 60px 80px;
+    width: 505px;
+    padding: 45px 60px;
+    padding-right: 50px;
     border: 1px solid;
     display: flex;
     flex-direction: row;
     background-color: #8C30F5;
+    color: white;
+    gap: 50px;
 }
 
 main section.materi ul.list-materi li.genap{
     background-color: #fff;
+    color: black;
 }
 
 main section.materi ul.list-materi li img{
@@ -248,23 +257,25 @@ main section.materi ul.list-materi li img{
 }
 
 main section.materi ul.list-materi li div.judul{
-    width: 299px;
-    margin-left: auto;
+    width: 260px;
+    /* margin-left: 80px; */
     text-align: left;
 }
 
-main section.materi ul.list-materi li div.judul h5, main section.materi ul.list-materi li div.judul p{
-    font-size: 16px;
+main section.materi ul.list-materi li div.judul p{
+    font-size: 13px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: lighter;
     line-height: 24px;
     overflow-y: hidden;
+    border: 1px solid;
 }
 
 main section.materi ul.list-materi li div.judul h5{
     font-size: 16px;
+    overflow-y: hidden; 
     font-style: normal;
-    font-weight: 800;
+    font-weight: 700;
     line-height: 18px;
     letter-spacing: 2px;
 }
