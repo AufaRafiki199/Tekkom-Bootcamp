@@ -20,7 +20,6 @@ h1.title{
 
 nav{
     padding: 26px 0;
-    /* border: 1px black outline; */
     display: flex;
     justify-content: center;
     box-shadow: 1px 1px 1px 0px #E5E9F2;
@@ -111,7 +110,6 @@ main section.kol-time{
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* border: 1px black solid; */
 }
 
 main section.syarat h1.title{
@@ -207,7 +205,6 @@ main section.fasilitas div.list ul li{
     flex-direction: row;
     align-items: center;
     gap: 20px;
-    /* color: white; */
 }
 
 main section.fasilitas div.list ul li h2{
@@ -223,21 +220,26 @@ main section.materi{
     padding: 0 140px;
 }
 
+main section.materi div.utama h1{
+    text-align: start;
+}
+
 main section.materi div.utama img{
+    margin-top: 24px;
     width: 430px;
-    height: 335px;
+    height: 330px;
 }
 
 main section.materi ul.list-materi{
     display: flex;
     flex-direction: column;
+    gap: 0;
 }
 
 main section.materi ul.list-materi li{
     width: 505px;
     padding: 45px 60px;
     padding-right: 50px;
-    border: 1px solid;
     display: flex;
     flex-direction: row;
     background-color: #8C30F5;
@@ -246,19 +248,17 @@ main section.materi ul.list-materi li{
 }
 
 main section.materi ul.list-materi li.genap{
-    background-color: #fff;
+    background-color: #F1E4FF;;
     color: black;
 }
 
 main section.materi ul.list-materi li img{
     width: 96px;
     height: 96px;
-    border: 1px solid;
 }
 
 main section.materi ul.list-materi li div.judul{
     width: 260px;
-    /* margin-left: 80px; */
     text-align: left;
 }
 
@@ -266,9 +266,8 @@ main section.materi ul.list-materi li div.judul p{
     font-size: 13px;
     font-style: normal;
     font-weight: lighter;
-    line-height: 24px;
+    line-height: 20px;
     overflow-y: hidden;
-    border: 1px solid;
 }
 
 main section.materi ul.list-materi li div.judul h5{
@@ -278,4 +277,49 @@ main section.materi ul.list-materi li div.judul h5{
     font-weight: 700;
     line-height: 18px;
     letter-spacing: 2px;
+    margin: 0 auto;
+}
+
+main section.requisites{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 80px auto;
+}
+
+main section.requisites ul.list-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 40px;
+    gap: 50px;
+}
+
+main section.requisites ul.list-item li{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+    width: auto;
+}
+
+main section.requisites ul.list-item li div.rincian h1{
+    text-align: left;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+}
+
+main section.requisites ul.list-item li div.rincian p{
+    color: #039BE5;
+    font-family: Manrope;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+main section.requisites ul.list-item li div.rincian p span{
+    color: black;
 }
