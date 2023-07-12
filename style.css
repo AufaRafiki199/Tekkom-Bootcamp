@@ -29,6 +29,12 @@ header nav ul li a{
     color: black;
 }
 
+header nav ul li a:hover{
+    font-weight: 1000;
+    color: black;
+    text-shadow: 2px 2px 4px #8C30F5;
+}
+
 ul{
     margin-bottom: 0;
     text-align: center;
@@ -387,6 +393,12 @@ footer nav{
 
 footer nav ul li a{
     color: white;
+}
+
+footer nav ul li a:hover{
+    font-weight: 1000;
+    color: white;
+    text-shadow: 4px 4px 4px #8C30F5;
 }
 
 footer div.copyright{
