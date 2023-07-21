@@ -6,6 +6,7 @@
     padding: 0;
     font-family: Manrope;
     overflow-x: hidden;
+    box-sizing: border-box;
 }
 
 h1.title{
@@ -53,26 +54,14 @@ li a {
     /* cursor: pointer; */
 }
 
+/* Hero */
 main section.hero{
     z-index: 2;
     background-color: rgba(242, 247, 255, 0.70);
     backdrop-filter: blur(50px);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 153px 165px;
-    padding-bottom: 173px;
+    padding: 153px 0;
 }
 
-main section.hero h1.title{
-    width: 100%;
-    text-align: center;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: 50px;
-    text-transform: uppercase;
-}
 main div.circle{
     width: 147px;
     height: 147px;
@@ -84,30 +73,50 @@ main div.circle{
     left: 295px;
 }
 
-main div.balok-1 img{
+main section.hero .row::before{
+    content: '';
+    width: 500px;
+    height: 128px;
+    display: block;
     position: absolute;
     z-index: 3;
-    top: 591px;
-    left: 830px;
+    bottom: 0px;
+    right: 0;
+    background: url(image/Group\ 55.png) no-repeat;
 }
 
-main div.balok-2 img{
+main section.hero .row::after{
+    content: '';
+    width: 500px;
+    height: 128px;
+    display: block;
     position: absolute;
     z-index: 3;
-    top: 654px;
-    left: -99px;
+    bottom: 0px;
+    left: 0;
+    background: url(image/Group\ 24.png) no-repeat;
+}
+
+main section.hero h1.title{
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 50px;
+    text-transform: uppercase;
 }
 
 main section.hero h1.title span{
     font-size: 30px;
     font-weight: 600;
     text-transform: capitalize;
-    line-height: 10%;
 }
 
 main section.hero div.btn-join{
+    width: fit-content;
     margin-top: 32px;
-    padding: 16px 53px;
+    padding: 10px 23px;
     background-color: #8C30F5;
     border-radius: 8px;
     cursor: pointer;
@@ -115,17 +124,16 @@ main section.hero div.btn-join{
 
 main section.hero div.btn-join a{
     color: white;
-    margin: 0;
     font-weight: 700;
     font-size: 20px;
 }
 
+/* About */
 main section.about{
     margin: 80px 0;
     margin-top: 0;
     display: flex;
     flex-direction: row;
-    position: relative;
     height: auto;
     overflow: hidden;
 }
@@ -502,4 +510,34 @@ footer div.garis{
 
 footer p{
     font-weight: 600;
+}
+
+
+
+/* Responsive Breakpoint */
+/* Mobile */
+@media screen and (max-width:576px) {
+    main div.circle{
+        display: none;
+    }
+    
+    main section.hero .row::before{
+        display: none;
+    }
+
+    main section.hero .row::after{
+        display: none;
+    }
+    
+    main section.hero h1.title span{
+        font-size: 26px;
+    }
+    
+    main section.hero div.btn-join{
+        padding: 8px 20px;
+    }
+    
+    main section.hero div.btn-join a{
+        font-size: 18px;
+    }
 }
