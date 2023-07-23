@@ -128,76 +128,7 @@ main section.hero div.btn-join a{
     font-size: 20px;
 }
 
-/* About */
-main section.about{
-    margin: 80px 0;
-    margin-top: 0;
-    display: flex;
-    flex-direction: row;
-    height: auto;
-    overflow: hidden;
-}
-
-main section.about div.konten{
-    width: 100%;
-    margin: 94px 0;
-    border-radius: 16px;
-    background: var(--brand-purple, #8C30F5);
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 30px;
-    color: white;
-    position: relative;
-    left: 135px;
-    right: auto;
-    z-index: 1;
-}
-
-main section.about div.konten div.isi{
-    flex: 1;
-    padding: 30px 40px;
-    position: relative;
-}
-
-main section.about div.konten div.isi h1{
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 54px;
-    /* border: 1px solid; */
-}
-
-main section.about div.konten div.isi p{
-    margin-top: 32px;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 0;
-    line-height: 30px;
-}
-
-main section.about img{
-    width: 320px;
-    height: 530px;
-    position: relative;
-    right: 230px;
-    /* top: 150px; */
-    z-index: 2;
-}
-
-main section.timeline{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 80px;
-    /* border: 1px solid; */
-}
-
-main section.syarat h1.title{
-    color: white;
-}
-
+/* Kolaborasi */
 main section.kolaborasi{
     padding: 80px 0;
     display: flex;
@@ -206,113 +137,144 @@ main section.kolaborasi{
 }
 
 main section.kolaborasi ul.logo{
-    /* margin: 40px 0; */
     padding: 40px 200px;
     gap: 64px;
 }
 
 main section.kolaborasi div.garis{
-    /* margin: 40px auto; */
     width: 75%;
     height: 1px;
     background: linear-gradient(135deg, rgba(192, 204, 218, 0.10) 0%, rgba(192, 204, 218, 0.60) 50.38%, rgba(192, 204, 218, 0.10) 100%);
 }
 
-main section.timeline ul.detail-timeline{
-    margin: 40px 150px 0 150px;
+/* About */
+main section.about{
+    padding: 221px 160px;
+    position: relative;
 }
 
-main section.timeline ul.detail-timeline li{
-    width: 255px;
+main section.about .konten {
+    width: 1110px;
+    border-radius: 16px;
+    background:#8C30F5;
     display: flex;
-    flex-direction: column;
-    text-align: start;
-    padding: 0;
 }
 
-main section.timeline ul.detail-timeline li h1{
-    height: 100%;
+main section.about .konten .isi {
+    width: 540px;
+    padding: 40px 48px;
+    box-sizing: border-box;
+}
+
+main section.about .konten .isi h1 {
+    font-size: 40px;
+    font-weight: 800;
+    overflow: hidden;
+    margin-bottom: 32px;
+}
+
+main section.about .konten .isi p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+main section.about .konten img {
+    width: 300px;
+    height: 620px;
+    position: absolute;
+    right: 260px;
+    top: 100px;
+}
+
+/* timeline */
+main section.timeline {
+    padding: 0 280px;
+    margin: 0 0 80px 0;
+}
+
+main section.timeline h1.title {
+    font-size: 48px;
+    font-weight: 600;
+    color: #18191F;
+    margin-bottom: 40px;
+}
+
+main section.timeline .detail-timeline li h1 {
+    overflow: hidden;
+    margin-top: 16px;
     font-size: 18px;
     font-weight: 700;
-    line-height: 28px;
+    color: #18191F;
 }
 
-main section.timeline ul.detail-timeline li h2{
+main section.timeline .detail-timeline li p {
+    overflow: hidden;
+    margin-top: 4px;
     font-size: 16px;
     font-weight: 400;
     line-height: 26px;
-    padding: 0;
+    color: #18191F;
 }
 
-main section.syarat{
-    padding: 80px 22%;
+/* syarat */
+main section.syarat {
+    padding: 80px 0;
     background-color: #8C30F5;
 }
 
-div.list{
-    display: flex;
-    flex-direction: row;
-    gap: 96px;
-    margin-top: 40px;
-}
-
-div.list ul{
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-    gap: 20px;
-}
-
-main section.syarat div.list ul li{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 30px;
-    color: white;
-}
-
-main section.syarat div.list ul li div.nomor{
-    border-radius: 50%;
-    width: 70px;
-    height: 70px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #fff;
-    color: #8C30F5;
-    padding: 0;
-}
-
-main section.syarat div.list ul li div.nomor p, main section.syarat div.list ul li h2{
-    margin: 0;
-    font-size: 20px;
-    font-style: normal;
+main section.syarat h1.title, main section.fasilitas h1.title, main section.requisites h1.title {
+    margin-bottom: 40px;
+    font-size: 48px;
     font-weight: 600;
-    line-height: 32px;
 }
 
-main section.fasilitas{
-    padding: 80px 15%;
+main section.syarat .row {
+    margin: 0 260px 20px;
 }
 
-main section.fasilitas div.list{
-    gap: 80px;
-}
-
-main section.fasilitas div.list ul li{
+main section.syarat .row .col, main section.fasilitas .row .col, main section.requisites .row .col {
     display: flex;
-    flex-direction: row;
     align-items: center;
-    gap: 20px;
 }
 
-main section.fasilitas div.list ul li h2{
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: 32px;
+main section.syarat .nomor {
+    width: 72px;
+    height: 72px;
+    background-color: #F4F5F7;
+    border-radius: 100px;
+    overflow: hidden;
+    line-height: 72px;
 }
 
+main section.syarat .nomor p {
+    color: #8C30F5;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+main section.syarat h2.isi, main section.fasilitas h2.isi {
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 600;
+    overflow: hidden;
+    margin-left: 40px;
+}
+
+/* fasilitas */
+main section.fasilitas, main section.requisites {
+    padding: 80px 0;
+}
+
+main section.fasilitas .row {
+    margin: 0 180px 40px;
+}
+
+main section.fasilitas h2.isi {
+    color: #18191F;
+}
+
+/* Materi */
 main section.materi{
     display: flex;
     flex-direction: row;
@@ -379,54 +341,32 @@ main section.materi ul.list-materi li div.judul h5{
     margin: 0 auto;
 }
 
-main section.requisites{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 80px auto;
+/* requisites */
+main section.requisites .row {
+    margin: 0 260px 20px;
 }
 
-main section.requisites ul.list-item{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 40px;
-    gap: 50px;
+main section.requisites img {
+    width: 90px;
 }
 
-main section.requisites ul.list-item li{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin: 0;
-    width: auto;
+main section.requisites .rincian {
+    margin: 0 0 8px 20px;
 }
 
-main section.requisites ul.list-item li div.rincian h1{
-    text-align: left;
-    font-size: 22px;
-    font-style: normal;
+main section.requisites .rincian h1 {
+    color:#18191F;
+    font-size: 24px;
     font-weight: 600;
-    line-height: 32px;
+    overflow: hidden;
 }
 
-main section.requisites ul.list-item li div.rincian p{
-    color: #039BE5;
-    font-family: Manrope;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 32px;
-}
-
-main section.requisites ul.list-item li div.rincian p a{
+main section.requisites .rincian a {
+    text-decoration: none;
     color: #039BE5;
 }
 
-main section.requisites ul.list-item li div.rincian p span{
-    color: black;
-}
-
+/* asking */
 main section.asking{
     padding: 80px 0;
     background-color: #8C30F5;
@@ -539,5 +479,84 @@ footer p{
     
     main section.hero div.btn-join a{
         font-size: 18px;
+    }
+
+    main section.about{
+        padding: 221px 160px;
+        position: relative;
+    }
+    
+    main section.about .konten {
+        width: 1110px;
+        border-radius: 16px;
+        background:#8C30F5;
+        display: flex;
+    }
+    
+    /* About */
+    main section.about{
+        padding: 40px 20px;
+    }
+    
+    main section.about .konten {
+        width: auto;
+        text-align: justify;
+    }
+
+    main section.about .konten img {
+        display: none;
+    }
+
+    /* timeline */
+    main section.timeline {
+        padding: 0 20px;
+        margin: 20px 0 40px 0;
+    }
+
+    main section.timeline .detail-timeline {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main section.timeline .detail-timeline li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main section.timeline .detail-timeline li div img:nth-child(2) {
+        display: none;
+    }
+
+    /* syarat */
+
+    main section.syarat .row, main section.fasilitas .row {
+        margin: 0 20px 20px;
+    }
+
+    main section.syarat .row .col, main section.fasilitas .row .col {
+        flex-direction: column;
+    }
+
+    main section.syarat h2.isi, main section.fasilitas h2.isi {
+        font-size: 20px;
+        margin-left: 0px;
+        margin-top: 12px;
+        text-align: center;
+    }
+
+    /* requisites */
+    main section.requisites .row {
+        margin: 0 20px 20px;
+        flex-direction: column;
+    }
+
+    main section.requisites .row .col {
+        margin: 20px;
+    }
+    
+    main section.requisites img {
+        width: 80px;
     }
 }
