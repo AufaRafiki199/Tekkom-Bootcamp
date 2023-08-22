@@ -1,562 +1,659 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap");
 
-
-*{
-    margin: 0;
-    padding: 0;
-    font-family: Manrope;
-    overflow-x: hidden;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Manrope;
+  overflow-x: hidden;
+  box-sizing: border-box;
 }
 
-h1.title{
-    text-align: center;
-    font-size: 37px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: 37px;
-    margin: 0;
-    overflow: hidden;
+h1.title {
+  text-align: center;
+  font-size: 37px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 37px;
+  margin: 0;
+  overflow: hidden;
 }
 
-nav{
-    padding: 26px 0;
-    display: flex;
-    justify-content: center;
-    box-shadow: 1px 1px 1px 0px #E5E9F2;
+nav {
+  padding: 26px 0;
+  display: flex;
+  justify-content: center;
+  box-shadow: 1px 1px 1px 0px #e5e9f2;
 }
 
-header nav ul li a{
-    color: black;
+header nav ul li a {
+  color: black;
 }
 
-header nav ul li a:hover{
-    font-weight: 1000;
-    color: black;
-    text-shadow: 2px 2px 4px #8C30F5;
+header nav ul li a:hover {
+  font-weight: 1000;
+  color: black;
+  text-shadow: 2px 2px 4px #8c30f5;
 }
 
-ul{
-    margin-bottom: 0;
-    text-align: center;
-    display: inline-flex;
-    align-items: flex-start;
-    gap: 32px;
+ul {
+  margin-bottom: 0;
+  text-align: center;
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 32px;
 }
 
-li{
-    display: inline;
-    font-weight: 700;
+li {
+  display: inline;
+  font-weight: 700;
 }
 
 li a {
-    text-decoration: none;
-    /* cursor: pointer; */
+  text-decoration: none;
+  /* cursor: pointer; */
 }
 
 /* Hero */
-main section.hero{
-    z-index: 2;
-    background-color: rgba(242, 247, 255, 0.70);
-    backdrop-filter: blur(50px);
-    padding: 153px 0;
+main section.hero {
+  z-index: 2;
+  background-color: rgba(242, 247, 255, 0.7);
+  backdrop-filter: blur(50px);
+  padding: 153px 0;
 }
 
-main div.circle{
-    width: 147px;
-    height: 147px;
-    background-color: #2EC5CE;
-    position: absolute;
-    border-radius: 100%;
-    z-index: -1;
-    top: 211px;
-    left: 295px;
+main div.circle {
+  width: 147px;
+  height: 147px;
+  background-color: #2ec5ce;
+  position: absolute;
+  border-radius: 100%;
+  z-index: -1;
+  top: 211px;
+  left: 295px;
 }
 
-main section.hero .row::before{
-    content: '';
-    width: 500px;
-    height: 128px;
-    display: block;
-    position: absolute;
-    z-index: 3;
-    bottom: 0px;
-    right: 0;
-    background: url(image/Group\ 55.png) no-repeat;
+main section.hero .row::before {
+  content: "";
+  width: 500px;
+  height: 128px;
+  display: block;
+  position: absolute;
+  z-index: 3;
+  bottom: 0px;
+  right: 0;
+  background: url(image/Group\ 55.png) no-repeat;
 }
 
-main section.hero .row::after{
-    content: '';
-    width: 500px;
-    height: 128px;
-    display: block;
-    position: absolute;
-    z-index: 3;
-    bottom: 0px;
-    left: 0;
-    background: url(image/Group\ 24.png) no-repeat;
+main section.hero .row::after {
+  content: "";
+  width: 500px;
+  height: 128px;
+  display: block;
+  position: absolute;
+  z-index: 3;
+  bottom: 0px;
+  left: 0;
+  background: url(image/Group\ 24.png) no-repeat;
 }
 
-main section.hero h1.title{
-    width: 100%;
-    text-align: center;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: 50px;
-    text-transform: uppercase;
+main section.hero h1.title {
+  width: 100%;
+  text-align: center;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 50px;
+  text-transform: uppercase;
 }
 
-main section.hero h1.title span{
-    font-size: 30px;
-    font-weight: 600;
-    text-transform: capitalize;
+main section.hero h1.title span {
+  font-size: 30px;
+  font-weight: 600;
+  text-transform: capitalize;
 }
 
-main section.hero div.btn-join{
-    width: fit-content;
-    margin-top: 32px;
-    padding: 10px 23px;
-    background-color: #8C30F5;
-    border-radius: 8px;
-    cursor: pointer;
+main section.hero div.btn-join {
+  width: fit-content;
+  margin-top: 32px;
+  padding: 10px 23px;
+  background-color: #8c30f5;
+  border-radius: 8px;
+  cursor: pointer;
 }
 
-main section.hero div.btn-join a{
-    color: white;
-    font-weight: 700;
-    font-size: 20px;
+main section.hero div.btn-join a {
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
 }
 
 /* Kolaborasi */
-main section.kolaborasi{
-    padding: 80px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+main section.kolaborasi {
+  padding: 80px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-main section.kolaborasi ul.logo{
-    padding: 40px 200px;
-    gap: 64px;
+main section.kolaborasi ul.logo {
+  padding: 40px 200px;
+  gap: 64px;
 }
 
-main section.kolaborasi div.garis{
-    width: 75%;
-    height: 1px;
-    background: linear-gradient(135deg, rgba(192, 204, 218, 0.10) 0%, rgba(192, 204, 218, 0.60) 50.38%, rgba(192, 204, 218, 0.10) 100%);
+main section.kolaborasi div.garis {
+  width: 75%;
+  height: 1px;
+  background: linear-gradient(
+    135deg,
+    rgba(192, 204, 218, 0.1) 0%,
+    rgba(192, 204, 218, 0.6) 50.38%,
+    rgba(192, 204, 218, 0.1) 100%
+  );
 }
 
 /* About */
-main section.about{
-    padding: 221px 160px;
-    position: relative;
+main section.about {
+  padding: 221px 160px;
+  position: relative;
 }
 
 main section.about .konten {
-    width: 1110px;
-    border-radius: 16px;
-    background:#8C30F5;
-    display: flex;
+  width: 1110px;
+  border-radius: 16px;
+  background: #8c30f5;
+  display: flex;
 }
 
 main section.about .konten .isi {
-    width: 540px;
-    padding: 40px 48px;
-    box-sizing: border-box;
+  width: 540px;
+  padding: 40px 48px;
+  box-sizing: border-box;
 }
 
 main section.about .konten .isi h1 {
-    font-size: 40px;
-    font-weight: 800;
-    overflow: hidden;
-    margin-bottom: 32px;
+  font-size: 40px;
+  font-weight: 800;
+  overflow: hidden;
+  margin-bottom: 32px;
 }
 
 main section.about .konten .isi p {
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 32px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
 }
 
 main section.about .konten img {
-    width: 300px;
-    height: 620px;
-    position: absolute;
-    right: 260px;
-    top: 100px;
+  width: 300px;
+  height: 620px;
+  position: absolute;
+  right: 260px;
+  top: 100px;
 }
 
 /* timeline */
 main section.timeline {
-    padding: 0 280px;
-    margin: 0 0 80px 0;
+  padding: 0 280px;
+  margin: 0 0 80px 0;
 }
 
 main section.timeline h1.title {
-    font-size: 48px;
-    font-weight: 600;
-    color: #18191F;
-    margin-bottom: 40px;
+  font-size: 48px;
+  font-weight: 600;
+  color: #18191f;
+  margin-bottom: 40px;
 }
 
 main section.timeline .detail-timeline li h1 {
-    overflow: hidden;
-    margin-top: 16px;
-    font-size: 18px;
-    font-weight: 700;
-    color: #18191F;
+  overflow: hidden;
+  margin-top: 16px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #18191f;
 }
 
 main section.timeline .detail-timeline li p {
-    overflow: hidden;
-    margin-top: 4px;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 26px;
-    color: #18191F;
+  overflow: hidden;
+  margin-top: 4px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #18191f;
 }
 
 /* syarat */
 main section.syarat {
-    padding: 80px 0;
-    background-color: #8C30F5;
+  padding: 80px 0;
+  background-color: #8c30f5;
 }
 
-main section.syarat h1.title, main section.fasilitas h1.title, main section.requisites h1.title {
-    margin-bottom: 40px;
-    font-size: 48px;
-    font-weight: 600;
+main section.syarat h1.title,
+main section.fasilitas h1.title,
+main section.requisites h1.title {
+  margin-bottom: 40px;
+  font-size: 48px;
+  font-weight: 600;
 }
 
 main section.syarat .row {
-    margin: 0 260px 20px;
+  margin: 0 260px 20px;
 }
 
-main section.syarat .row .col, main section.fasilitas .row .col, main section.requisites .row .col {
-    display: flex;
-    align-items: center;
+main section.syarat .row .col,
+main section.fasilitas .row .col,
+main section.requisites .row .col {
+  display: flex;
+  align-items: center;
 }
 
 main section.syarat .nomor {
-    width: 72px;
-    height: 72px;
-    background-color: #F4F5F7;
-    border-radius: 100px;
-    overflow: hidden;
-    line-height: 72px;
+  width: 72px;
+  height: 72px;
+  background-color: #f4f5f7;
+  border-radius: 100px;
+  overflow: hidden;
+  line-height: 72px;
 }
 
 main section.syarat .nomor p {
-    color: #8C30F5;
-    font-size: 24px;
-    font-weight: 600;
+  color: #8c30f5;
+  font-size: 24px;
+  font-weight: 600;
 }
 
-main section.syarat h2.isi, main section.fasilitas h2.isi {
-    color: #FFF;
-    font-size: 24px;
-    font-weight: 600;
-    overflow: hidden;
-    margin-left: 40px;
+main section.syarat h2.isi,
+main section.fasilitas h2.isi {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+  overflow: hidden;
+  margin-left: 40px;
 }
 
 /* fasilitas */
-main section.fasilitas, main section.requisites {
-    padding: 80px 0;
+main section.fasilitas,
+main section.requisites {
+  padding: 80px 0;
 }
 
 main section.fasilitas .row {
-    margin: 0 180px 40px;
+  margin: 0 180px 40px;
 }
 
 main section.fasilitas h2.isi {
-    color: #18191F;
+  color: #18191f;
 }
 
 /* Materi */
-main section.materi{
-    display: flex;
-    flex-direction: row;
-    padding: 0 140px;
+section.materi {
+  margin-top: 80px !important;
+  margin: 0 154px;
+  box-sizing: border-box !important;
 }
 
-main section.materi div.utama h1{
-    text-align: start;
+section.materi h1.title {
+  color: #18191f;
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 24px;
+  text-align: start;
 }
 
-main section.materi div.utama img{
-    margin-top: 24px;
-    width: 430px;
-    height: 515px;
+section.materi .html {
+  display: flex;
+  background-color: #8c30f5;
+  position: relative;
 }
 
-main section.materi ul.list-materi{
-    display: flex;
-    flex-direction: column;
-    gap: 0;
+section.materi .css {
+  display: flex;
+  background-color: #f1e4ff;
+  position: relative;
 }
 
-main section.materi ul.list-materi li{
-    width: 505px;
-    padding: 45px 60px;
-    padding-right: 50px;
-    display: flex;
-    flex-direction: row;
-    background-color: #8C30F5;
-    color: white;
-    gap: 50px;
+section.materi .js {
+  display: flex;
+  background-color: #8c30f5;
+  position: relative;
 }
 
-main section.materi ul.list-materi li.genap{
-    background-color: #F1E4FF;;
-    color: black;
+section.materi .icon {
+  width: 96px;
+  height: 96px;
+  background-color: #f4f5f7;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 60px 80px;
+  box-sizing: border-box;
 }
 
-main section.materi ul.list-materi li img{
-    width: 96px;
-    height: 96px;
+section.materi .icon img {
+  width: 40px;
+  height: 45px;
 }
 
-main section.materi ul.list-materi li div.judul{
-    width: 260px;
-    text-align: left;
+section.materi .html .desk,
+section.materi .css .desk,
+section.materi .js .desk {
+  position: absolute;
+  width: 400px;
+  left: 256px;
+  top: 60px;
 }
 
-main section.materi ul.list-materi li div.judul p{
-    font-size: 13px;
-    font-style: normal;
-    font-weight: lighter;
-    line-height: 20px;
-    overflow-y: hidden;
+section.materi .css .desk {
+  top: 48px;
 }
 
-main section.materi ul.list-materi li div.judul h5{
-    font-size: 16px;
-    overflow-y: hidden; 
-    font-style: normal;
-    font-weight: 700;
-    line-height: 18px;
-    letter-spacing: 2px;
-    margin: 0 auto;
+section.materi .html .desk h5,
+section.materi .js .desk h5 {
+  overflow: hidden;
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+section.materi .css .desk h5 {
+  color: #18191f;
+  overflow: hidden;
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+section.materi .css .desk p {
+  color: #18191f;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+section.materi .html .desk p,
+section.materi .js .desk p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
 }
 
 /* requisites */
 main section.requisites .row {
-    margin: 0 260px 20px;
+  margin: 0 260px 20px;
 }
 
 main section.requisites img {
-    width: 90px;
+  width: 90px;
 }
 
 main section.requisites .rincian {
-    margin: 0 0 8px 20px;
+  margin: 0 0 8px 20px;
 }
 
 main section.requisites .rincian h1 {
-    color:#18191F;
-    font-size: 24px;
-    font-weight: 600;
-    overflow: hidden;
+  color: #18191f;
+  font-size: 24px;
+  font-weight: 600;
+  overflow: hidden;
 }
 
 main section.requisites .rincian a {
-    text-decoration: none;
-    color: #039BE5;
+  text-decoration: none;
+  color: #039be5;
 }
 
 /* asking */
-main section.asking{
-    padding: 80px 0;
-    background-color: #8C30F5;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+main section.asking {
+  padding: 80px 0;
+  background-color: #8c30f5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-main section.asking h1.title{
-    font-weight: bold;
-    line-height: 48px;
-    color: white;
+main section.asking h1.title {
+  font-weight: bold;
+  line-height: 48px;
+  color: white;
 }
 
-main section.asking div.btn-join{
-    margin-top: 32px;
-    padding: 16px 53px;
-    background-color: #fff;
-    border-radius: 8px;
-    cursor: pointer;
+main section.asking div.btn-join {
+  margin-top: 32px;
+  padding: 16px 53px;
+  background-color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
 }
 
-main section.asking div.btn-join a{
-    color: #8C30F5;
-    margin: 0;
-    font-weight: 700;
-    font-size: 20px;
+main section.asking div.btn-join a {
+  color: #8c30f5;
+  margin: 0;
+  font-weight: 700;
+  font-size: 20px;
 }
 
-main section.lokasi{
-    padding: 80px 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+main section.lokasi {
+  padding: 80px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-main section.lokasi iframe{
-    margin-top: 40px;
-    width: 1000px;
-    height: 500px;
+main section.lokasi iframe {
+  margin-top: 40px;
+  width: 1000px;
+  height: 500px;
 }
 
-footer{
-    background-color: #0B0D17;
-    color: #F2F2F2;
+/* footer */
+footer {
+  background-color: #0b0d17;
+  padding: 40px 0 30px 0;
 }
 
-footer nav{
-    box-shadow: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+footer .row {
+  padding: 0 400px;
+  margin-bottom: 30px;
+  display: flex;
 }
 
-footer nav ul li a{
-    color: white;
+footer .row .col a {
+  text-decoration: none;
+  color: #f2f2f2;
 }
 
-footer nav ul li a:hover{
-    font-weight: 1000;
-    color: white;
-    text-shadow: 4px 4px 4px #8C30F5;
+footer div.garis {
+  margin: 0 auto;
+  width: 75%;
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0)
+  );
 }
 
-footer div.copyright{
-    display: flex;
-    justify-content: center;
-    padding: 26px 0;
-    /* border-top: 1px solid white; */
+footer p {
+  font-weight: 600;
+  margin-top: 20px;
 }
-
-footer div.garis{
-    margin: 0 auto;
-    width: 75%;
-    height: 1px;
-    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
-    z-index: 9999;
-}
-
-footer p{
-    font-weight: 600;
-}
-
-
 
 /* Responsive Breakpoint */
 /* Mobile */
-@media screen and (max-width:576px) {
-    main div.circle{
-        display: none;
-    }
-    
-    main section.hero .row::before{
-        display: none;
-    }
+@media screen and (max-width: 776px) {
+  main div.circle {
+    display: none;
+  }
 
-    main section.hero .row::after{
-        display: none;
-    }
-    
-    main section.hero h1.title span{
-        font-size: 26px;
-    }
-    
-    main section.hero div.btn-join{
-        padding: 8px 20px;
-    }
-    
-    main section.hero div.btn-join a{
-        font-size: 18px;
-    }
+  main section.hero .row::before {
+    display: none;
+  }
 
-    main section.about{
-        padding: 221px 160px;
-        position: relative;
-    }
-    
-    main section.about .konten {
-        width: 1110px;
-        border-radius: 16px;
-        background:#8C30F5;
-        display: flex;
-    }
-    
-    /* About */
-    main section.about{
-        padding: 40px 20px;
-    }
-    
-    main section.about .konten {
-        width: auto;
-        text-align: justify;
-    }
+  main section.hero .row::after {
+    display: none;
+  }
 
-    main section.about .konten img {
-        display: none;
-    }
+  main section.hero h1.title span {
+    font-size: 26px;
+  }
 
-    /* timeline */
-    main section.timeline {
-        padding: 0 20px;
-        margin: 20px 0 40px 0;
-    }
+  main section.hero div.btn-join {
+    padding: 8px 20px;
+  }
 
-    main section.timeline .detail-timeline {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+  main section.hero div.btn-join a {
+    font-size: 18px;
+  }
 
-    main section.timeline .detail-timeline li {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+  main section.about {
+    padding: 221px 160px;
+    position: relative;
+  }
 
-    main section.timeline .detail-timeline li div img:nth-child(2) {
-        display: none;
-    }
+  main section.about .konten {
+    width: 1110px;
+    border-radius: 16px;
+    background: #8c30f5;
+    display: flex;
+  }
 
-    /* syarat */
+  /* About */
+  main section.about {
+    padding: 40px 20px;
+  }
 
-    main section.syarat .row, main section.fasilitas .row {
-        margin: 0 20px 20px;
-    }
+  main section.about .konten {
+    width: auto;
+    text-align: justify;
+  }
 
-    main section.syarat .row .col, main section.fasilitas .row .col {
-        flex-direction: column;
-    }
+  main section.about .konten img {
+    display: none;
+  }
 
-    main section.syarat h2.isi, main section.fasilitas h2.isi {
-        font-size: 20px;
-        margin-left: 0px;
-        margin-top: 12px;
-        text-align: center;
-    }
+  /* timeline */
+  main section.timeline {
+    padding: 0 20px;
+    margin: 20px 0 40px 0;
+  }
 
-    /* requisites */
-    main section.requisites .row {
-        margin: 0 20px 20px;
-        flex-direction: column;
-    }
+  main section.timeline .detail-timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-    main section.requisites .row .col {
-        margin: 20px;
-    }
-    
-    main section.requisites img {
-        width: 80px;
-    }
+  main section.timeline .detail-timeline li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  main section.timeline .detail-timeline li div img:nth-child(2) {
+    display: none;
+  }
+
+  /* syarat */
+
+  main section.syarat .row,
+  main section.fasilitas .row {
+    margin: 0 20px 20px;
+  }
+
+  main section.syarat .row .col,
+  main section.fasilitas .row .col {
+    flex-direction: column;
+  }
+
+  main section.syarat h2.isi,
+  main section.fasilitas h2.isi {
+    font-size: 20px;
+    margin-left: 0px;
+    margin-top: 12px;
+    text-align: center;
+  }
+
+  /* Materi */
+  section.materi {
+    margin: 0 20px;
+  }
+
+  section.materi .html {
+    display: flex;
+    flex-direction: column;
+  }
+
+  section.materi .css {
+    display: flex;
+    flex-direction: column;
+  }
+
+  section.materi .js {
+    display: flex;
+    flex-direction: column;
+  }
+
+  section.materi .icon {
+    width: 96px;
+    height: 96px;
+    background-color: #f4f5f7;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px auto;
+    box-sizing: border-box;
+  }
+
+  section.materi .html .desk,
+  section.materi .css .desk,
+  section.materi .js .desk {
+    position: relative;
+    width: 300px;
+    left: 0px;
+    top: 0px;
+    margin: 8px auto;
+    text-align: center;
+  }
+
+  section.materi .css .desk {
+    top: 0px;
+  }
+
+  /* requisites */
+  main section.requisites .row {
+    margin: 0 20px 20px;
+    flex-direction: column;
+  }
+
+  main section.requisites .row .col {
+    margin: 20px;
+  }
+
+  main section.requisites img {
+    width: 80px;
+  }
+
+  /* lokasi */
+  main section.lokasi iframe {
+    width: 460px;
+    border-radius: 20px;
+  }
+
+  /* footer */
+  footer .row {
+    padding: 0 14px;
+  }
+
+  footer .row .col a {
+    font-size: 14px;
+  }
+
+  footer p {
+    font-size: 16px;
+  }
 }
